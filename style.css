@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    padding-left: 1.5rem;
+}
+
+header h1 {
+    color: #333333;
+    font-family: 'Inconsolata';
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.08em;
+}
+
+main {
+    margin-top: 4rem;
+}
+
+main .main-text {
+    margin-block: 4.8531rem;
+}
+
+.main-text h2 {
+    font-size: clamp(3rem, 5vw, 10rem);
+    font-weight: 700;
+    margin-bottom: 1.875rem;
+    letter-spacing: -0.035em;
+}
+
+.main-text p {
+    font-size: clamp(1.125rem, 5vw, 10rem) 1.125rem;
+    font-weight: 400;
+    letter-spacing: -0.035em;
+}
+
+.main-text a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #333333;
+    color: #fff;
+    margin-top: 4.125rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+}
+
+.btn {
+    padding: 22px 30px;
+}
+
+@media (min-width:992px) {
+    .container {
+        padding-left: 4.8125rem;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 7.4238rem;
+    }
+
+    main {
+        margin-top: 12.5rem;
+    }
+
+    main .main-text {
+        margin: 0;
+    }
+
+    .main-text p {
+        width: 23.8125rem;
+    }
+
+    .main-text a {
+
+        margin-top: 4rem;
+
+    }
+}
